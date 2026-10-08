@@ -150,3 +150,44 @@ to reduce the risk of unauthorized access.
 After access removal, the IAM team should verify that the user's account
 is disabled and that unnecessary access, group memberships, roles and
 active sessions have been removed.
+## 5. Role-Based Access Control (RBAC)
+
+### Overview
+
+Role-Based Access Control (RBAC) is an access control model where
+permissions are assigned to roles, and users receive access based on
+their assigned roles.
+
+This helps organizations manage access consistently and reduces the
+need to assign permissions individually to every user.
+
+### Example
+
+For Ananya Rao, who works as a Finance Analyst:
+
+| Role | Access |
+|---|---|
+| Finance Analyst | Finance application |
+| Finance Analyst | Finance group |
+| Finance Analyst | Required Microsoft 365 resources |
+
+Ananya should receive only the permissions associated with her job
+responsibilities.
+
+### RBAC Workflow
+
+1. Identify the employee's job role.
+2. Identify the access required for that role.
+3. Assign the appropriate role or group.
+4. Grant the required permissions.
+5. Review access periodically.
+6. Remove access when the role changes or employment ends.
+
+### Benefits of RBAC
+
+- Simplifies access management.
+- Provides consistent access based on job roles.
+- Supports least privilege.
+- Reduces excessive permissions.
+- Makes access reviews easier.
+- Helps reduce the risk of unauthorized access.
