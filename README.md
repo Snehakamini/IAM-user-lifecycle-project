@@ -249,3 +249,155 @@ Before granting access, the IAM team should verify:
 4. Is the access appropriate for the user's role?
 5. Is there a less privileged option?
 6. When should the access be reviewed or removed?
+## 7. Access Review
+
+### Overview
+
+An access review is a periodic process used to verify whether users
+still need the access assigned to them.
+
+The purpose is to identify and remove unnecessary or outdated access.
+
+### Example
+
+Ananya Rao's access is reviewed periodically.
+
+The IAM team checks:
+
+- Current job role
+- Group memberships
+- Application access
+- Assigned permissions
+- Administrative privileges
+
+### Access Review Decision
+
+| Access | Review Decision | Reason |
+|---|---|---|
+| Finance group | Keep | Required for current role |
+| Finance application | Keep | Required for job |
+| Microsoft 365 | Keep | Required for work |
+| Old application access | Remove | No longer required |
+| Unnecessary administrative role | Remove | Violates least privilege |
+
+### Access Review Process
+
+1. Identify users and their assigned access.
+2. Compare access with the user's current job responsibilities.
+3. Review group memberships and roles.
+4. Identify unnecessary or excessive access.
+5. Remove access that is no longer required.
+6. Document the review decision.
+7. Verify that the changes were completed.
+
+### Benefits
+
+Regular access reviews help organizations:
+
+- Maintain least privilege.
+- Detect excessive access.
+- Remove outdated permissions.
+- Reduce security risks.
+- Support compliance requirements.
+- ## 8. Complete JML Workflow
+
+The Joiner-Mover-Leaver lifecycle can be summarized as:
+
+### Joiner
+
+Employee joins the organization.
+
+HR request → Identity verification → Account provisioning →
+Group assignment → Access assignment → MFA → Access verification
+
+### Mover
+
+Employee changes role or department.
+
+HR role change → Access review → Remove unnecessary access →
+Assign new required access → Verify access
+
+### Leaver
+
+Employee leaves the organization.
+
+HR termination → Disable account → Revoke sessions →
+Remove group memberships → Remove application access →
+Remove roles → Verify access removal → Document completion
+
+### Overall Workflow
+
+Joiner → Access Provisioning → Mover → Access Review →
+Leaver → Access Deprovisioning
+
+## 9. IAM Concepts Demonstrated
+
+This project demonstrates the following IAM concepts:
+
+- Identity Lifecycle Management
+- Joiner-Mover-Leaver (JML)
+- User Provisioning
+- User Deprovisioning
+- Role-Based Access Control (RBAC)
+- Least Privilege
+- Authentication
+- Authorization
+- Group-Based Access
+- Access Reviews
+- Access Management
+- Role Changes
+- Offboarding
+
+- ## 10. Authentication vs Authorization
+
+### Authentication
+
+Authentication verifies the identity of a user.
+
+Example:
+
+A user signs in using their username, password and MFA.
+
+The system verifies that the person is who they claim to be.
+
+### Authorization
+
+Authorization determines what an authenticated user is allowed
+to access.
+
+Example:
+
+After Ananya signs in, authorization determines whether she can
+access the Finance application.
+
+### Difference
+
+Authentication = "Who are you?"
+
+Authorization = "What are you allowed to access?"
+
+## 11. Learning Reference
+
+This project was created as a practical learning exercise based on
+Microsoft Learn concepts related to Microsoft Entra ID and Identity
+and Access Management.
+
+Microsoft Learn:
+https://learn.microsoft.com/training/
+
+## 12. Project Outcome
+
+Through this project, I learned how IAM teams manage user identities
+and access throughout the employee lifecycle.
+
+Key learning outcomes:
+
+- Understanding the Joiner-Mover-Leaver lifecycle.
+- Understanding user provisioning and deprovisioning.
+- Applying Role-Based Access Control.
+- Applying the Principle of Least Privilege.
+- Understanding access reviews.
+- Understanding authentication and authorization.
+- Understanding why access must be modified when an employee changes
+  roles.
+- Understanding why access must be removed when an employee leaves.
