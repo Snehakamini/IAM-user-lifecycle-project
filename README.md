@@ -191,3 +191,61 @@ responsibilities.
 - Reduces excessive permissions.
 - Makes access reviews easier.
 - Helps reduce the risk of unauthorized access.
+- ## 6. Least Privilege
+
+### Overview
+
+The Principle of Least Privilege means giving a user only the minimum
+level of access required to perform their job responsibilities.
+
+Users should not receive unnecessary permissions or administrative
+privileges.
+
+### Example
+
+Ananya Rao is a Finance Analyst.
+
+She requires access to:
+
+- Finance applications
+- Finance group resources
+- Required Microsoft 365 resources
+
+She does not require:
+
+- Global Administrator privileges
+- Security Administrator privileges
+- IT Administrator privileges
+- Access to unrelated applications
+
+### Access Decision
+
+| Request | Decision | Reason |
+|---|---|---|
+| Finance application | Grant | Required for job |
+| Finance group | Grant | Required for job |
+| Microsoft 365 | Grant | Required for work |
+| Global Administrator | Deny | Not required |
+| Security Administrator | Deny | Not required |
+| Unrelated application | Deny | Not required |
+
+### Why Least Privilege Matters
+
+Applying least privilege helps:
+
+- Reduce unauthorized access.
+- Reduce the impact of compromised accounts.
+- Prevent excessive permissions.
+- Improve security.
+- Support access reviews and compliance.
+
+### IAM Practice
+
+Before granting access, the IAM team should verify:
+
+1. Who is requesting the access?
+2. What access is being requested?
+3. Why is the access required?
+4. Is the access appropriate for the user's role?
+5. Is there a less privileged option?
+6. When should the access be reviewed or removed?
