@@ -108,3 +108,45 @@ Ananya's permissions should be aligned with her new responsibilities.
 A role change should not automatically result in additional
 administrative privileges. Only the access required for the new role
 should be granted.
+## 4. Leaver – Employee Offboarding
+
+### Scenario
+
+Ananya Rao leaves TechNova and her employment is terminated.
+
+The IAM team must ensure that her access is removed promptly and
+that her account cannot be used after her departure.
+
+### IAM Actions
+
+1. HR confirms the employee's termination.
+2. IAM team receives the offboarding request.
+3. User account is disabled.
+4. Active sessions are revoked.
+5. Group memberships are removed.
+6. Application access is removed.
+7. Assigned roles and permissions are reviewed and removed.
+8. Company devices and resources are recovered according to company policy.
+9. Offboarding actions are documented.
+10. The IAM team verifies that access has been successfully removed.
+
+### Access Removal
+
+| Access | Action | Reason |
+|---|---|---|
+| Microsoft 365 | Remove | Employee has left |
+| Finance group | Remove | No longer required |
+| Finance application | Remove | No longer required |
+| HR portal | Remove | No longer required |
+| Active sessions | Revoke | Prevent continued access |
+
+### Security Principle
+
+Access should be removed as part of the employee offboarding process
+to reduce the risk of unauthorized access.
+
+### Verification
+
+After access removal, the IAM team should verify that the user's account
+is disabled and that unnecessary access, group memberships, roles and
+active sessions have been removed.
