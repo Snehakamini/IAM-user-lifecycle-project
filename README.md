@@ -72,3 +72,39 @@ She should NOT receive unnecessary administrative privileges such as:
 - Global Administrator
 - Security Administrator
 - IT Administrator
+## 3. Mover – Employee Role Change
+
+### Scenario
+
+Ananya Rao is promoted from Finance Analyst to Senior Finance Analyst.
+
+Her responsibilities have increased, so her access must be reviewed and
+updated according to her new role.
+
+### IAM Actions
+
+1. HR updates Ananya's job title and role.
+2. IAM team receives the role-change request.
+3. Existing access is reviewed.
+4. Access that is no longer required is removed.
+5. New access required for the Senior Finance Analyst role is assigned.
+6. Group memberships are updated if required.
+7. Access is verified after the changes.
+
+### Access Review
+
+| Access | Action | Reason |
+|---|---|---|
+| Microsoft 365 | Keep | Required for work |
+| Finance group | Keep | Still part of Finance |
+| Finance application | Keep | Required for role |
+| Senior Finance application | Add | Required for new responsibilities |
+| Unnecessary previous access | Remove | Least privilege |
+
+### Least Privilege
+
+Ananya's permissions should be aligned with her new responsibilities.
+
+A role change should not automatically result in additional
+administrative privileges. Only the access required for the new role
+should be granted.
